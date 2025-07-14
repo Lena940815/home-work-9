@@ -10,14 +10,39 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+@media (max-width: 1199px) {
+  body {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 767px) {
+  body {
+    font-size: 12px;
+  }
+}
+
 .container {
   max-width: 1920px;
   width: 100%;
   margin: 0 auto;
+  padding: 0 30px;
 }
 h1 {
   font-size: 48px;
   font-weight: 500;
+}
+
+@media (max-width: 1199px) {
+  h1 {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 767px) {
+  h1 {
+    font-size: 32px;
+  }
 }
 
 h1 + p {
@@ -26,9 +51,35 @@ h1 + p {
   max-width: 540px;
 }
 
+@media (max-width: 1199px) {
+  h1 + p {
+    margin-top: 50px;
+    max-width: 500px;
+  }
+}
+
+@media (max-width: 767px) {
+  h1 + p {
+    margin-top: 40px;
+    max-width: 320px;
+  }
+}
+
 h2 {
   font-size: 32px;
   font-weight: 500;
+}
+
+@media (max-width: 1199px) {
+  h2 {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 767px) {
+  h2 {
+    font-size: 20px;
+  }
 }
 
 h2 + p {
@@ -37,9 +88,35 @@ h2 + p {
   max-width: 540px;
 }
 
+@media (max-width: 1199px) {
+  h2 + p {
+    margin-top: 40px;
+    max-width: 500px;
+  }
+}
+
+@media (max-width: 767px) {
+  h2 + p {
+    margin-top: 30px;
+    max-width: 320px;
+  }
+}
+
 h3 {
   font-size: 21px;
   font-weight: 500;
+}
+
+@media (max-width: 1199px) {
+  h3 {
+    font-size: 17px;
+  }
+}
+
+@media (max-width: 767px) {
+  h3 {
+    font-size: 13px;
+  }
 }
 
 button {
@@ -50,6 +127,20 @@ button {
   border: 1px solid transparent;
   cursor: pointer;
   text-transform: uppercase;
+}
+
+@media (max-width: 1199px) {
+  button {
+    padding: 20px 36px;
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 767px) {
+  button {
+    padding: 12px 24px;
+    font-size: 10px;
+  }
 }
 
 button.primery {
@@ -66,7 +157,21 @@ button.primery:hover {
 .hero {
   padding: 80px 0 140px;
   background-color: #eeeff1;
-  height: 70vh;
+  height: 100vh;
+}
+
+@media (max-width: 1199px) {
+  .hero {
+    padding: 32px 0 72px;
+    height: 65vh;
+  }
+}
+
+@media (max-width: 767px) {
+  .hero {
+    padding: 10px 0 60px;
+    height: 50vh;
+  }
 }
 
 .hero_container {
@@ -81,6 +186,12 @@ nav ul {
   display: flex;
   align-items: center;
   gap: 64px;
+}
+
+@media (max-width: 767px) {
+  nav ul {
+    gap: 25px;
+  }
 }
 
 nav a {
@@ -100,6 +211,18 @@ nav a {
   padding: 100px 0;
 }
 
+@media (max-width: 1199px) {
+  .about {
+    padding: 80px 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .about {
+    padding: 60px 0;
+  }
+}
+
 .about_conteiner {
   display: flex;
   flex-direction: column;
@@ -111,15 +234,29 @@ nav a {
 
 .advantages {
   background-color: #34547a;
-  padding: 100px 0;
+  padding: 80px 0;
+}
+
+@media (max-width: 1199px) {
+  .advantages {
+    padding: 60px 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .advantages {
+    padding: 40px 0;
+  }
 }
 
 .advantages_list {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 
 .advantages_item {
+  padding: 10px 0;
   display: flex;
   gap: 20px;
   color: #ffffff;
@@ -128,6 +265,20 @@ nav a {
 .advantages_icon {
   width: 50px;
   height: 50px;
+}
+
+@media (max-width: 1199px) {
+  .advantages_icon {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+@media (max-width: 767px) {
+  .advantages_icon {
+    width: 30px;
+    height: 30px;
+  }
 }
 
 .advantages_info {
@@ -142,6 +293,18 @@ nav a {
   background-color: #eeeff1;
 }
 
+@media (max-width: 1199px) {
+  .works {
+    padding: 80px 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .works {
+    padding: 60px 0;
+  }
+}
+
 .works_conteiner {
   display: flex;
   flex-direction: column;
@@ -150,7 +313,14 @@ nav a {
 }
 
 .works_video {
+  width: 80%;
   margin-top: 60px;
+}
+
+iframe {
+  width: 80%;
+  max-width: 1540px;
+  aspect-ratio: 16 / 9;
 }
 
 /* FOOTER */
@@ -160,10 +330,47 @@ nav a {
   background-color: #34547a;
   color: #ffffff;
 }
+
+@media (max-width: 1199px) {
+  .footer {
+    padding: 40px 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .footer {
+    padding: 30px 0;
+  }
+}
+
 .footer_author {
   margin-bottom: 20px;
 }
 
+@media (max-width: 1199px) {
+  .footer_author {
+    margin-bottom: 15px;
+  }
+}
+
+@media (max-width: 767px) {
+  .footer_author {
+    margin-bottom: 10px;
+  }
+}
+
 .footer_copy {
   font-size: 13px;
+}
+
+@media (max-width: 1199px) {
+  .footer_copy {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 767px) {
+  .footer_copy {
+    font-size: 7px;
+  }
 }

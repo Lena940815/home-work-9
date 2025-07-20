@@ -1,3 +1,8 @@
+:root {
+  --grey-text-color: #727272;
+  --primary-color: #34547a;
+}
+
 *,
 *::before,
 *::after {
@@ -26,8 +31,15 @@ body {
   max-width: 1920px;
   width: 100%;
   margin: 0 auto;
-  padding: 0 30px;
+  padding: 0 21%;
 }
+
+@media (max-width: 767px) {
+  .container {
+    padding: 0 12%;
+  }
+}
+
 h1 {
   font-size: 48px;
   font-weight: 500;
@@ -46,7 +58,7 @@ h1 {
 }
 
 h1 + p {
-  color: #727272;
+  color: var(--grey-text-color);
   margin-top: 60px;
   max-width: 540px;
 }
@@ -83,7 +95,7 @@ h2 {
 }
 
 h2 + p {
-  color: #727272;
+  color: var(--grey-text-color);
   margin-top: 50px;
   max-width: 540px;
 }
@@ -144,7 +156,7 @@ button {
 }
 
 button.primery {
-  background-color: #34547a;
+  background-color: var(--primary-color);
   color: #ffffff;
 }
 
@@ -158,19 +170,21 @@ button.primery:hover {
   padding: 80px 0 140px;
   background-color: #eeeff1;
   height: 100vh;
+  max-height: 700px;
 }
 
 @media (max-width: 1199px) {
   .hero {
-    padding: 32px 0 72px;
-    height: 65vh;
+    padding: 67px 0 105px;
+    max-height: 500px;
   }
 }
 
 @media (max-width: 767px) {
   .hero {
-    padding: 10px 0 60px;
-    height: 50vh;
+    padding: 30px 0 60px;
+    height: 67vh;
+    max-height: 450px;
   }
 }
 
@@ -188,9 +202,15 @@ nav ul {
   gap: 64px;
 }
 
+@media (max-width: 1199px) {
+  nav ul {
+    gap: 48px;
+  }
+}
+
 @media (max-width: 767px) {
   nav ul {
-    gap: 25px;
+    gap: 16px;
   }
 }
 
@@ -201,6 +221,7 @@ nav a {
 }
 
 .hero_content {
+  margin-top: 40px;
   margin-bottom: 65px;
 }
 
@@ -223,7 +244,7 @@ nav a {
   }
 }
 
-.about_conteiner {
+.about_container {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -233,7 +254,7 @@ nav a {
 /* ADVANTAGES */
 
 .advantages {
-  background-color: #34547a;
+  background-color: var(--primary-color);
   padding: 80px 0;
 }
 
@@ -258,8 +279,22 @@ nav a {
 .advantages_item {
   padding: 10px 0;
   display: flex;
-  gap: 20px;
+  gap: 10px;
   color: #ffffff;
+}
+
+@media (max-width: 1199px) {
+  .advantages_item {
+    padding: 8px 0;
+    gap: 8px;
+  }
+}
+
+@media (max-width: 767px) {
+  .advantages_item {
+    padding: 6px 0;
+    gap: 6px;
+  }
 }
 
 .advantages_icon {
@@ -305,7 +340,7 @@ nav a {
   }
 }
 
-.works_conteiner {
+.works_container {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -313,13 +348,12 @@ nav a {
 }
 
 .works_video {
-  width: 80%;
+  width: 100%;
   margin-top: 60px;
 }
 
 iframe {
-  width: 80%;
-  max-width: 1540px;
+  width: 100%;
   aspect-ratio: 16 / 9;
 }
 
@@ -327,7 +361,7 @@ iframe {
 
 .footer {
   padding: 50px 0;
-  background-color: #34547a;
+  background-color: var(--primary-color);
   color: #ffffff;
 }
 

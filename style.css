@@ -176,7 +176,7 @@ button.primery:hover {
 @media (max-width: 1199px) {
   .hero {
     padding: 67px 0 105px;
-    max-height: 500px;
+    max-height: 600px;
   }
 }
 
